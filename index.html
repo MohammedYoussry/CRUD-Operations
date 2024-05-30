@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operations</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+<main class="py-5 interface py-5 position-relative">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="py-2 position-relative fw-bold">Bookmarker</h1>
+        <div class="bookmark-body bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2 class="fw-bold"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i></h2>
+        
+
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="siteName" class="fw-bold"><i class="fa-solid fa-book-bookmark "></i> Site Name</label>
+                <input type="text" class="form-control"  id="siteName" placeholder="Bookmark Name">
+              </div>
+              <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="siteUrl" class="fw-bold"><i class="fa-solid fa-link "></i> Site URL</label>
+                <input type="url" class="form-control"  id="siteUrl" placeholder="Website URL">
+              </div>
+              <button onclick="addSite()"  class="btn btn-submit btn-danger px-5" id="submitBtn">Submit</button>
+        </div>
+        <div class="form-floating mb-3 w-100 d-flex flex-column justify-content-center mt-3">
+            <input type="text" oninput="search(this.value)" class="form-control" id="search" placeholder="Search">
+            <label for="search">Search ... :</label>
+        </div>
+       
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                
+            </tbody>
+        </table>
+      
+    </div>
+    
+</main>
+   
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
